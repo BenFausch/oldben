@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="former">
+  <IconStyle>
+    <Icon>
+      <href>http://benfausch.com/MUSEAPP/note2.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Folder>
+
+
+
+
+
+<name>points.kml</name>
+	 <Placemark>
+   			 <description><![CDATA[<h1>Our Loving Creator</h1><h1><a href="http://www.benfausch.com">ALL HAIL THE HYPNOGINGER</a></h1>]]></description>
+			 <styleUrl>#former</styleUrl>
+			 <Point><coordinates>-73.965735,40.707282</coordinates></Point>		
+	 </Placemark>
+
+
+	
+	 <Placemark>
+<description>
+<![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Max's_Kansas_City">Max's Kansas City</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/maxs.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.988921,40.737340</coordinates></Point>		
+	 </Placemark>
+
+
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Cbgb">CBGB</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/CBGB.jpg" width="200">]]></description> 
+<styleUrl>#former</styleUrl><Point><coordinates>-73.99218,40.725968</coordinates></Point></Placemark>
+
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Fillmore_East">Fillmore East</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/fillmoreeast.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.988629,40.727908</coordinates></Point>		
+	 </Placemark>
+
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Electric_Circus_(nightclub)">Electric Circus</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/electriccircus.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.988491,40.729359</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://pigbag.tripod.com/coney/">Coney Island High</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/coneyislandhigh.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.989100,40.729676</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Danceteria">Danceteria</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/danceteria.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.991662,40.740949</coordinates></Point>		
+	 </Placemark>
+	
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Paradise_Garage">Paradise Garage</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/paradisegarage.jpeg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.006246,40.728484</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Studio_54">Studio 54</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/studio54.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.983179,40.764304</coordinates></Point>		
+	 </Placemark>
+	
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Wetlands_Preserve">Wetlands Preserve</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/wetlandspreserve.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.008068,40.722387</coordinates></Point>		
+	 </Placemark>
+	
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Knitting_Factory">The Knitting Factory (II)</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/knittingfactoryII.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.005211,40.717927</coordinates></Point>		
+	 </Placemark> 
+	 
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Limelight">The Limelight</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/limelight.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.992615,40.740604</coordinates></Point>		
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Bond_International_Casino">Bond International Casino</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/bond.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.985652,40.758037</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Palladium_(club)">The Palladium</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/palladium.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.989574,40.734744</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Ritz_(rock_club)">The Ritz</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/ritz.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.989863,40.732329</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2>The Academy</h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/academy.JPG" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.987587,40.757186</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Bottom_Line_(venue)">The Bottom Line</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/bottomline.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.995082,40.729351</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Mudd_Club">The Mudd Club</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/mudd.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.002310,40.718165</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://www.villagevoice.com/2002-08-06/nyc-life/bye-bye-brownies/full/">Brownies</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/brownies.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.982211,40.728341</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://spsounds.com/">Southpaw</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/southpaw.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.978779,40.6786898</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/A7_%28bar%29">A7</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/a7.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.983608,40.726477</coordinates></Point>		
+	 </Placemark>
+	 
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Aeolian_Hall_%28Manhattan%29">Aeolian Hall</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/aeolian.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.982099,40.754103</coordinates></Point>		
+	 </Placemark>
+	 
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Cafe_au_Go_Go">Cafe au Go Go</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/cafeaugogo.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.999482,40.728884</coordinates></Point>		
+	 </Placemark>
+	 
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/CBS_30th_Street_Studio">CBS 30th Street</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/cbs30th.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.980001,40.743502</coordinates></Point>		
+	 </Placemark>
+	 
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Connie%27s_Inn">Connie's Inn</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/conniesinn.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9453248,40.8128793</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Cotton_Club">Cotton Club</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/cottonclub.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9594272,40.8168711</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Five_Spot_Caf%C3%A9">Five Spot Cafe</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/fivespotcafe.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9912704,40.7276051</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Gaslight_Cafe">The Gaslight Cafe</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/gaslightcafe.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.000443,40.729675</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Gaslight_Cafe">The Gaslight Cafe</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/gaslightcafe.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.000443,40.729675</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Gerde%27s_Folk_City">Gerde's Folk City</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/gerdesfolkcity.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9948766,40.7287712</coordinates></Point>		
+	 </Placemark>
+	 
+	 
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Half_Note_Club">Half Note Club</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/halfnoteclub.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.0078125,40.725708</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Hurrah_%28nightclub%29">Hurrah</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/hurrah.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9824372,40.7706372</coordinates></Point>		
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/IME,_New_York_City">Independent Musician's Entity</a></h2>
+<img src="" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.984848,40.7473183</coordinates></Point>		
+	 </Placemark>
+
+	  <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/L%27Amour_%28venue%29">L'Amour</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/lamour.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9948538,40.623915</coordinates></Point>		
+	 </Placemark>
+
+	  <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Lion%27s_Den_%28nightclub%29">Lion's Den</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/lionsden.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.0001831,40.7294731</coordinates></Point>		
+	 </Placemark>
+
+	  <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Madison_Square_Garden_%281925%29">Madison Square Garden (III)</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/madisonsquaregardenIII.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.993385,40.750481</coordinates></Point>	
+	 </Placemark>
+
+	  <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Metropolitan_Opera_House_%2839th_St%29">Metropolitan Opera House</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/metropolitanoperahouse.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.987549,40.754189</coordinates></Point>	
+	 </Placemark>
+
+	  <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Minton%27s_Playhouse">Minton's Playhouse</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/mintonsplayhouse.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9523575,40.8048152</coordinates></Point>	
+	 </Placemark>
+
+	  <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/New_York_Hippodrome">New York Hippodrome</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/newyorkhippodrome.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.982857,40.7556</coordinates></Point>	
+	 </Placemark>
+
+	  <Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Pike%27s_Opera_House">Pike's Opera House</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/pikesoperahouse.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9958818,40.7442529</coordinates></Point>	
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Rothko_%28club%29">Rothko</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/rothko.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9858398,40.7189026</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Saint_%28club%29">The Saint</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/thesaint.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.98846,40.727509</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Savoy_Ballroom">Savoy Ballroom</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/savoyballroom.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9383215,40.8173391</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Scene_%28performance_venue%29">The Scene</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/thescene.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.988049,40.7598869</coordinates></Point>	
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Sin-%C3%A9">Sin-%C3%A9</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/sine.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.983932,40.726768</coordinates></Point>	
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Slug%27s_Saloon">Slug's Saloon</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/slugssaloon.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9815979,40.7218246</coordinates></Point>	
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Scene_%28performance_venue%29">Sweet Basil Jazz Club</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/sweetbasiljazzclub.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9989971,40.7395819</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Tier_3">Tier 3</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/tier.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.00602,40.719212</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Tonic_%28music_venue%29">Tonic</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/tonic.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9873581,40.7189865</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/The_Village_Gate">The Village Gate</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/thevillagegate.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9999332,40.7284849</coordinates></Point>	
+	 </Placemark>
+	
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Wollman_Rink">Wollman Rink</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/wollmanrink.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.974513,40.768127</coordinates></Point>	
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Wollman_Rink">The Cat Club</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/catclub.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.990584,40.734404</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://vassifer.blogs.com/alexinnyc/2012/01/marquee-memories.html">The Marquee</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/marquee.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-74.006482,40.746981</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://streetsyoucrossed.blogspot.com/2010/12/tramps-like-them.html">Tramps</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/tramps.gif" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.992366,40.741239</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/8BC">8BC</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/8bc.gif" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.979105,40.725394</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://www.queermusicheritage.com/fem-cl82.html">Club 82</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/club82.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.989487,40.726712</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Mercury_Lounge">Mercury Lounge</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/mercury.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.986955,40.722715</coordinates></Point>	
+	 </Placemark>
+
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Peppermint_Lounge">The Peppermint Lounge</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/peppermint.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.983661,40.757231</coordinates></Point>	
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Pyramid_Club">The Pyramid Club</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/pyramid.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.9839225,40.7258024</coordinates></Point>	
+	 </Placemark>
+
+	<Placemark>
+<description><![CDATA[<h2><a href="http://www.queermusicheritage.com/fem-cl82.html">Club 82</a></h2>
+<img src="http://www.benfausch.com/MUSEAPP/img/club82.jpg" width="200">]]></description>
+<styleUrl>#former</styleUrl><Point><coordinates>-73.989487,40.726712</coordinates></Point>	
+	 </Placemark>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Folder>
+</Document>			  
+</kml>

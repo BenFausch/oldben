@@ -1,0 +1,919 @@
+/*$breakpoints: (
+    'smaller':   ( min-width: 475px ),  // large-phone
+    'small':     ( min-width: 590px ),  // small-tablet
+    'medium':    ( min-width: 766px ),  // tablet
+    'large':     ( min-width: 1023px ), // small screen
+    'larger':    ( min-width: 1280px ), // widescreen
+    'largest':   ( min-width: 1920px )  // HDTV
+);
+*/
+/*
+
+http://meyerweb.com/eric/tools/css/reset/
+
+v2.0 | 20110126
+License: none (public domain)
+
+Extended by Daniel for Sounds true
+
+*/
+/* line 12, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 44, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 48, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 51, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 54, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 57, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 62, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+====================================
+Ben Theme
+====================================
+*/
+/* line 10, ../sass/_pages.scss */
+body {
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+/* line 18, ../sass/_pages.scss */
+html, body, div, span, applet, object, iframe, input, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: 'Raleway', sans-serif;
+  color: inherit;
+  color: #000000;
+}
+/* line 29, ../sass/_pages.scss */
+html p, body p, div p, span p, applet p, object p, iframe p, input p, h1 p, h2 p, h3 p, h4 p, h5 p, h6 p, p p,
+blockquote p, pre p, a p, abbr p, acronym p, address p, big p, cite p, code p, del p, dfn p, em p, img p,
+ins p, kbd p, q p, s p, samp p, small p, strike p, strong p, sub p, sup p, tt p, var p, b p, u p, i p, center p,
+dl p, dt p, dd p, ol p, ul p, li p, fieldset p, form p, label p, legend p, table p, caption p, tbody p,
+tfoot p, thead p, tr p, th p, td p, article p, aside p, canvas p, details p, embed p, figure p,
+figcaption p, footer p, header p, hgroup p, menu p, nav p, output p, ruby p, section p, summary p,
+time p, mark p, audio p, video p {
+  margin-bottom: 1rem;
+}
+/* line 34, ../sass/_pages.scss */
+html b, html strong, body b, body strong, div b, div strong, span b, span strong, applet b, applet strong, object b, object strong, iframe b, iframe strong, input b, input strong, h1 b, h1 strong, h2 b, h2 strong, h3 b, h3 strong, h4 b, h4 strong, h5 b, h5 strong, h6 b, h6 strong, p b, p strong,
+blockquote b,
+blockquote strong, pre b, pre strong, a b, a strong, abbr b, abbr strong, acronym b, acronym strong, address b, address strong, big b, big strong, cite b, cite strong, code b, code strong, del b, del strong, dfn b, dfn strong, em b, em strong, img b, img strong,
+ins b,
+ins strong, kbd b, kbd strong, q b, q strong, s b, s strong, samp b, samp strong, small b, small strong, strike b, strike strong, strong b, strong strong, sub b, sub strong, sup b, sup strong, tt b, tt strong, var b, var strong, b b, b strong, u b, u strong, i b, i strong, center b, center strong,
+dl b,
+dl strong, dt b, dt strong, dd b, dd strong, ol b, ol strong, ul b, ul strong, li b, li strong, fieldset b, fieldset strong, form b, form strong, label b, label strong, legend b, legend strong, table b, table strong, caption b, caption strong, tbody b, tbody strong,
+tfoot b,
+tfoot strong, thead b, thead strong, tr b, tr strong, th b, th strong, td b, td strong, article b, article strong, aside b, aside strong, canvas b, canvas strong, details b, details strong, embed b, embed strong, figure b, figure strong,
+figcaption b,
+figcaption strong, footer b, footer strong, header b, header strong, hgroup b, hgroup strong, menu b, menu strong, nav b, nav strong, output b, output strong, ruby b, ruby strong, section b, section strong, summary b, summary strong,
+time b,
+time strong, mark b, mark strong, audio b, audio strong, video b, video strong {
+  font-weight: bold;
+}
+/* line 38, ../sass/_pages.scss */
+html i, html em, body i, body em, div i, div em, span i, span em, applet i, applet em, object i, object em, iframe i, iframe em, input i, input em, h1 i, h1 em, h2 i, h2 em, h3 i, h3 em, h4 i, h4 em, h5 i, h5 em, h6 i, h6 em, p i, p em,
+blockquote i,
+blockquote em, pre i, pre em, a i, a em, abbr i, abbr em, acronym i, acronym em, address i, address em, big i, big em, cite i, cite em, code i, code em, del i, del em, dfn i, dfn em, em i, em em, img i, img em,
+ins i,
+ins em, kbd i, kbd em, q i, q em, s i, s em, samp i, samp em, small i, small em, strike i, strike em, strong i, strong em, sub i, sub em, sup i, sup em, tt i, tt em, var i, var em, b i, b em, u i, u em, i i, i em, center i, center em,
+dl i,
+dl em, dt i, dt em, dd i, dd em, ol i, ol em, ul i, ul em, li i, li em, fieldset i, fieldset em, form i, form em, label i, label em, legend i, legend em, table i, table em, caption i, caption em, tbody i, tbody em,
+tfoot i,
+tfoot em, thead i, thead em, tr i, tr em, th i, th em, td i, td em, article i, article em, aside i, aside em, canvas i, canvas em, details i, details em, embed i, embed em, figure i, figure em,
+figcaption i,
+figcaption em, footer i, footer em, header i, header em, hgroup i, hgroup em, menu i, menu em, nav i, nav em, output i, output em, ruby i, ruby em, section i, section em, summary i, summary em,
+time i,
+time em, mark i, mark em, audio i, audio em, video i, video em {
+  font-style: italic;
+}
+/* line 42, ../sass/_pages.scss */
+html a, body a, div a, span a, applet a, object a, iframe a, input a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a,
+blockquote a, pre a, a a, abbr a, acronym a, address a, big a, cite a, code a, del a, dfn a, em a, img a,
+ins a, kbd a, q a, s a, samp a, small a, strike a, strong a, sub a, sup a, tt a, var a, b a, u a, i a, center a,
+dl a, dt a, dd a, ol a, ul a, li a, fieldset a, form a, label a, legend a, table a, caption a, tbody a,
+tfoot a, thead a, tr a, th a, td a, article a, aside a, canvas a, details a, embed a, figure a,
+figcaption a, footer a, header a, hgroup a, menu a, nav a, output a, ruby a, section a, summary a,
+time a, mark a, audio a, video a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 53, ../sass/_pages.scss */
+html, body {
+  width: 100%;
+}
+
+/* line 58, ../sass/_pages.scss */
+body {
+  background-color: white;
+}
+
+/* line 65, ../sass/_pages.scss */
+#navClick, #navClick2 {
+  position: fixed;
+  z-index: 99999;
+  left: 1%;
+  bottom: 10px;
+  width: 100px;
+  height: 50px;
+  width: 7%;
+  height: 7%;
+}
+/* line 76, ../sass/_pages.scss */
+#navClick img, #navClick2 img {
+  width: 50px;
+  height: 50px;
+}
+/* line 80, ../sass/_pages.scss */
+#navClick p, #navClick2 p {
+  font-size: 1rem;
+  float: right;
+  margin-top: 20px;
+}
+/* line 83, ../sass/_pages.scss */
+#navClick p:hover, #navClick2 p:hover {
+  color: #dd3d30;
+}
+
+/* line 93, ../sass/_pages.scss */
+#navClick2 {
+  display: none;
+  opacity: 0.96;
+}
+/* line 96, ../sass/_pages.scss */
+#navClick2 p {
+  color: #FFFFFF;
+}
+/* line 98, ../sass/_pages.scss */
+#navClick2 p:hover {
+  color: #dd3d30;
+}
+
+/* line 105, ../sass/_pages.scss */
+nav {
+  position: fixed;
+  left: -700px;
+  background-color: transparent;
+  transition: all 600ms;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+  width: 35%;
+  z-index: 99999;
+  /*padding:2% 0;*/
+}
+/* line 120, ../sass/_pages.scss */
+nav #navTitle img {
+  width: 220px;
+  padding-bottom: 15%;
+}
+/* line 125, ../sass/_pages.scss */
+nav #navTitle h2 {
+  color: #FFFFFF;
+  font-weight: bolder;
+  padding: 10% 2% 1% 2%;
+}
+/* line 132, ../sass/_pages.scss */
+nav #navTitle h3 {
+  color: #FFFFFF;
+  font-weight: bolder;
+  padding: 2%;
+}
+/* line 142, ../sass/_pages.scss */
+nav #navLink, nav #social {
+  width: 100%;
+  margin-left: 0%;
+  list-style: none;
+  /*padding:0% 10%;*/
+  box-sizing: border-box;
+}
+/* line 150, ../sass/_pages.scss */
+nav #navLink li, nav #social li {
+  transition: all 600ms;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+}
+/* line 162, ../sass/_pages.scss */
+nav #navLink li a, nav #social li a {
+  padding: 0% 15% 0% 5%;
+  color: #FFFFFF;
+  font-weight: bolder;
+  transition: all 600ms;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+}
+/* line 172, ../sass/_pages.scss */
+nav #navLink li:hover a, nav #social li:hover a {
+  color: #dd3d30 !important;
+  border-bottom: 2px solid white;
+}
+
+/* line 184, ../sass/_pages.scss */
+#profile, #title {
+  float: left;
+  box-sizing: border-box;
+}
+
+/* line 190, ../sass/_pages.scss */
+#profile {
+  background-image: url("../../img/profile.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+}
+
+/* line 197, ../sass/_pages.scss */
+#title {
+  font-size: 2.4rem;
+  padding: 30% 10% 10% 10%;
+  font-weight: bold;
+}
+
+/* line 207, ../sass/_pages.scss */
+#about, #projects, #contact {
+  background-color: rgba(26, 0, 63, 0.9);
+  width: 100%;
+  height: 100%;
+  padding: 15%;
+  box-sizing: border-box;
+  /*end about*/
+}
+/* line 214, ../sass/_pages.scss */
+#about #aboutText, #about #contactText, #projects #aboutText, #projects #contactText, #contact #aboutText, #contact #contactText {
+  padding: 5%;
+  border: 2px solid transparent;
+  transition: all 600ms;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+}
+/* line 220, ../sass/_pages.scss */
+#about #aboutText:hover, #about #contactText:hover, #projects #aboutText:hover, #projects #contactText:hover, #contact #aboutText:hover, #contact #contactText:hover {
+  border: 2px solid white;
+}
+/* line 227, ../sass/_pages.scss */
+#about h1, #about h2, #about p, #about li, #projects h1, #projects h2, #projects p, #projects li, #contact h1, #contact h2, #contact p, #contact li {
+  color: #FFFFFF;
+}
+/* line 231, ../sass/_pages.scss */
+#about h1, #about h2, #projects h1, #projects h2, #contact h1, #contact h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2em;
+}
+/* line 236, ../sass/_pages.scss */
+#about h1 a, #about h2 a, #projects h1 a, #projects h2 a, #contact h1 a, #contact h2 a {
+  transition: all 600ms;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+}
+/* line 240, ../sass/_pages.scss */
+#about h1 a:hover, #about h2 a:hover, #projects h1 a:hover, #projects h2 a:hover, #contact h1 a:hover, #contact h2 a:hover {
+  color: #dd3d30;
+}
+/* line 245, ../sass/_pages.scss */
+#about p, #about li, #projects p, #projects li, #contact p, #contact li {
+  font-size: 1rem;
+  line-height: 1.2em;
+}
+/* line 249, ../sass/_pages.scss */
+#about li, #projects li, #contact li {
+  line-height: 1.5em;
+}
+
+/* line 260, ../sass/_pages.scss */
+#projects {
+  background-color: rgba(19, 17, 28, 0.93);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* line 269, ../sass/_pages.scss */
+#projects h2 {
+  font-size: 6rem !important;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10% 0;
+  border: 2px solid white;
+  width: 100%;
+  margin-bottom: 5%;
+}
+/* line 282, ../sass/_pages.scss */
+#projects #tiles {
+  width: 100%;
+}
+/* line 285, ../sass/_pages.scss */
+#projects #tiles li {
+  border: 2px solid transparent;
+  width: 100%;
+}
+/* line 290, ../sass/_pages.scss */
+#projects #tiles li img {
+  float: left;
+  width: 40%;
+  margin-left: 30%;
+  position: relative;
+  z-index: 4;
+  padding: 1%;
+  box-sizing: border-box;
+  transition: all 650ms;
+  -webkit-transition: all 650ms;
+}
+/* line 301, ../sass/_pages.scss */
+#projects #tiles li #hidden {
+  float: left;
+  opacity: 0;
+  width: 60%;
+  margin-left: -500px;
+  z-index: -2;
+  padding: 5%;
+  box-sizing: border-box;
+  transition: all 650ms;
+  -webkit-transition: all 650ms;
+}
+/* line 313, ../sass/_pages.scss */
+#projects #tiles li #hidden h1 {
+  line-height: 2rem;
+  margin-bottom: 3%;
+}
+/* line 317, ../sass/_pages.scss */
+#projects #tiles li #hidden p {
+  line-height: 1.5rem;
+  text-align: justify;
+}
+/* line 322, ../sass/_pages.scss */
+#projects #tiles li #hidden a {
+  text-decoration: underline;
+}
+/* line 328, ../sass/_pages.scss */
+#projects #tiles li #hidden a:hover {
+  transition: all 650ms;
+  -webkit-transition: all 650ms;
+  color: #dd3d30;
+  text-decoration: none;
+}
+/* line 339, ../sass/_pages.scss */
+#projects #tiles li:hover {
+  border: 2px solid white;
+}
+/* line 342, ../sass/_pages.scss */
+#projects #tiles li:hover img {
+  margin-left: 0;
+}
+/* line 345, ../sass/_pages.scss */
+#projects #tiles li:hover #hidden {
+  margin-left: 0px;
+  opacity: 1;
+  z-index: 4;
+}
+
+/* line 380, ../sass/_pages.scss */
+#contact {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 391, ../sass/_pages.scss */
+#content {
+  /* transition: all $navTr;
+           -webkit-transition: all $navTr;
+           -moz-transition:all $navTr; */
+}
+
+/* line 407, ../sass/_pages.scss */
+.visible {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+}
+
+/* line 2, ../sass/_button.scss */
+body .icon {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  margin: -20px;
+}
+
+/* line 13, ../sass/_button.scss */
+body .icon i {
+  width: 2px;
+  height: 14px;
+  background: #000;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 19px;
+  position: absolute;
+  top: 13px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+/* line 35, ../sass/_button.scss */
+body .icon i:after {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: -6px;
+  top: 6px;
+}
+
+/* line 45, ../sass/_button.scss */
+body .icon:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  -webkit-box-shadow: 14px 0px 0px #fff, -14px 0px 0px #fff;
+  box-shadow: 14px 0px 0px #fff, -14px 0px 0px #fff;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+/* line 64, ../sass/_button.scss */
+body .icon:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  -o-transform: scale(0.25);
+  -ms-transform: scale(0.25);
+  transform: scale(0.25);
+  background: #fff;
+  position: absolute;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+/* line 84, ../sass/_button.scss */
+body .icon.active:before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 91, ../sass/_button.scss */
+body .icon.active:after {
+  -webkit-box-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+  box-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+
+/* line 98, ../sass/_button.scss */
+body .icon.active i {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 108, ../sass/_button.scss */
+body .tap {
+  width: 80px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 127, ../sass/_button.scss */
+body .tap.active {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/*===========================================*/
+/* Biggest */
+/*===========================================*/
+@media screen and (max-width: 16800px) {
+  /* line 8, ../sass/_responsive.scss */
+  nav #navTitle {
+    padding-bottom: 25%;
+  }
+  /* line 12, ../sass/_responsive.scss */
+  nav #navTitle h2 {
+    font-size: 4.3rem;
+  }
+  /* line 15, ../sass/_responsive.scss */
+  nav #navTitle h3 {
+    font-size: 3.6rem;
+  }
+  /* line 21, ../sass/_responsive.scss */
+  nav #navLink, nav #social {
+    padding-bottom: 3%;
+  }
+  /* line 25, ../sass/_responsive.scss */
+  nav #navLink li a, nav #social li a {
+    font-size: 3.1rem;
+    line-height: 4.3rem;
+    padding-bottom: 0%;
+  }
+}
+/*===========================================*/
+/* 1800px */
+/*===========================================*/
+@media screen and (max-width: 1800px) {
+  /* line 52, ../sass/_responsive.scss */
+  nav #navTitle {
+    padding-bottom: 25%;
+  }
+  /* line 56, ../sass/_responsive.scss */
+  nav #navTitle h2 {
+    font-size: 4.3rem;
+  }
+  /* line 59, ../sass/_responsive.scss */
+  nav #navTitle h3 {
+    font-size: 3.6rem;
+  }
+  /* line 65, ../sass/_responsive.scss */
+  nav #navLink, nav #social {
+    padding-bottom: 3%;
+  }
+  /* line 69, ../sass/_responsive.scss */
+  nav #navLink li a, nav #social li a {
+    font-size: 3.1rem;
+    line-height: 4.3rem;
+    padding-bottom: 0%;
+  }
+
+  /* line 80, ../sass/_responsive.scss */
+  #about, #projects {
+    padding: 5%;
+  }
+  /* line 84, ../sass/_responsive.scss */
+  #about h1, #about h2, #projects h1, #projects h2 {
+    font-size: 2rem;
+    line-height: 2em;
+  }
+  /* line 89, ../sass/_responsive.scss */
+  #about p, #about li, #projects p, #projects li {
+    font-size: 1rem;
+    line-height: 1em;
+  }
+
+  /* line 98, ../sass/_responsive.scss */
+  #projects #tiles {
+    width: 100%;
+  }
+  /* line 103, ../sass/_responsive.scss */
+  #projects #tiles li #hidden h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  /* line 107, ../sass/_responsive.scss */
+  #projects #tiles li #hidden p {
+    font-size: 1rem;
+    /*leave at em so it's in relation to the font var*/
+    line-height: 1.4em;
+  }
+}
+/*===========================================*/
+/* smaller screens */
+/*===========================================*/
+@media screen and (max-width: 1200px) {
+  /* line 131, ../sass/_responsive.scss */
+  #navTitle {
+    padding-bottom: 25%;
+  }
+  /* line 135, ../sass/_responsive.scss */
+  #navTitle h2 {
+    font-size: 3.3rem;
+  }
+  /* line 138, ../sass/_responsive.scss */
+  #navTitle h3 {
+    font-size: 2.6rem;
+  }
+
+  /* line 147, ../sass/_responsive.scss */
+  #navTitle img {
+    padding-bottom: 1% !important;
+  }
+
+  /* line 153, ../sass/_responsive.scss */
+  #projects #tiles {
+    width: 100%;
+  }
+  /* line 162, ../sass/_responsive.scss */
+  #projects #tiles li #hidden h1 {
+    font-size: 2rem;
+    line-height: 1em;
+  }
+  /* line 166, ../sass/_responsive.scss */
+  #projects #tiles li #hidden p {
+    font-size: 1rem;
+    /*leave at em so it's in relation to the font var*/
+    line-height: 1.3em;
+  }
+}
+/*===========================================*/
+/* mobile */
+/*===========================================*/
+@media screen and (min-resolution: 1.1dppx) and (max-width: 1023px) and (orientation: portrait) {
+  /*=====globals=======*/
+  /* line 188, ../sass/_responsive.scss */
+  nav {
+    width: 45%;
+  }
+
+  /* line 197, ../sass/_responsive.scss */
+  #about h1, #about h2, #projects h1, #projects h2, #contact h1, #contact h2 {
+    font-size: 3rem;
+  }
+  /* line 200, ../sass/_responsive.scss */
+  #about p, #projects p, #contact p {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  /*==========nav stuff=========*/
+  /* line 224, ../sass/_responsive.scss */
+  nav #navTitle h2 {
+    font-size: 4rem;
+  }
+  /* line 227, ../sass/_responsive.scss */
+  nav #navTitle h3 {
+    font-size: 3rem;
+  }
+  /* line 232, ../sass/_responsive.scss */
+  nav #navLink, nav #social {
+    padding-bottom: 3%;
+  }
+  /* line 236, ../sass/_responsive.scss */
+  nav #navLink li a, nav #social li a {
+    font-size: 3.9rem;
+    line-height: 1.5em;
+  }
+
+  /* line 249, ../sass/_responsive.scss */
+  #navClick, #navClick2 {
+    height: 150px;
+    width: 300px;
+  }
+  /* line 252, ../sass/_responsive.scss */
+  #navClick img, #navClick2 img {
+    width: 150px;
+    height: 150px;
+  }
+  /* line 257, ../sass/_responsive.scss */
+  #navClick p, #navClick2 p {
+    font-size: 1.7rem;
+    margin-right: 20%;
+    margin-top: 19%;
+  }
+
+  /*==========end nav==============*/
+  /* line 270, ../sass/_responsive.scss */
+  #projects #tiles {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  /* line 274, ../sass/_responsive.scss */
+  #projects #tiles li {
+    width: 50%;
+    min-height: 250px !important;
+    border: none !important;
+    float: left;
+  }
+  /* line 280, ../sass/_responsive.scss */
+  #projects #tiles li img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0px;
+    z-index: 4;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+  /* line 289, ../sass/_responsive.scss */
+  #projects #tiles li img:hover {
+    opacity: .55;
+  }
+  /* line 293, ../sass/_responsive.scss */
+  #projects #tiles li img, #projects #tiles li #hidden {
+    transition: all 0ms;
+    -webkit-transition: all 0ms;
+  }
+  /* line 297, ../sass/_responsive.scss */
+  #projects #tiles li img h1, #projects #tiles li #hidden h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  /* line 302, ../sass/_responsive.scss */
+  #projects #tiles li img p, #projects #tiles li #hidden p {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  /* line 310, ../sass/_responsive.scss */
+  #projects #tiles li #hidden {
+    display: none;
+  }
+  /* line 313, ../sass/_responsive.scss */
+  #projects #tiles li:hover #hidden {
+    border: 2px solid white;
+    width: 100%;
+    position: absolute;
+    z-index: 15;
+    left: 0px;
+    padding: 10%;
+    background-color: black;
+  }
+
+  /*==end #projects==*/
+  /*==end media==*/
+}
+/*==end media==*/
+/*===========================================*/
+/* #hidden text Queries*/
+/*===========================================*/
+@media screen and (min-resolution: 1.1dppx) and (max-width: 1023px) and (orientation: portrait) {
+  /*@media screen and (max-width:1024px){*/
+  /* line 353, ../sass/_responsive.scss */
+  #hidden {
+    display: none;
+    border: 2px solid white;
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    left: 0px;
+    padding: 10%;
+    margin-top: 400px;
+    background-color: black;
+  }
+
+  /* line 365, ../sass/_responsive.scss */
+  #note {
+    display: block !important;
+    font-size: 2.1rem !important;
+    color: gray !important;
+    text-align: right !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 13800px), (orientation: landscape) {
+  /* line 395, ../sass/_responsive.scss */
+  #hidden {
+    float: left;
+    opacity: 0;
+    width: 60%;
+    margin-left: -500px;
+    z-index: -2;
+    padding: 5%;
+    box-sizing: border-box;
+    transition: all 650ms;
+    -webkit-transition: all 650ms;
+  }
+
+  /* line 405, ../sass/_responsive.scss */
+  #note {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1800px) and (orientation: landscape) {
+  /* line 417, ../sass/_responsive.scss */
+  nav #navTitle {
+    padding-bottom: 25%;
+  }
+  /* line 421, ../sass/_responsive.scss */
+  nav #navTitle h2 {
+    font-size: 2.3rem;
+  }
+  /* line 424, ../sass/_responsive.scss */
+  nav #navTitle h3 {
+    font-size: 1.6rem;
+  }
+  /* line 430, ../sass/_responsive.scss */
+  nav #navLink, nav #social {
+    padding-bottom: 3%;
+  }
+  /* line 434, ../sass/_responsive.scss */
+  nav #navLink li a, nav #social li a {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    padding-bottom: 0%;
+  }
+}

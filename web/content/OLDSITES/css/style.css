@@ -1,0 +1,195 @@
+
+
+
+body{margin:0px;
+overflow-x:hidden;
+zoom:1;
+background:none;
+font-family:"robotoregular";
+color:white;
+}
+#background{
+	position:fixed; 
+	top:0px; 
+	left:0px;
+	z-index:-1;
+	width:100%;}
+
+a:link, a:active, a:visited
+	{color:red; transition:all 300ms;}
+a:hover
+	{color:white}
+
+button{font-family:"robotobold";
+	font-size:22px;
+	color:white;
+	width:100%; 
+	background:#000; 
+	margin:0px;
+	padding:15px;
+	border:none;
+	-moz-transition:all 200ms;
+	-webkit-transition: all 200ms;
+	}
+
+button:hover{
+	background:#FE6500;
+	color:white;}
+
+button.Active{
+	border:none;
+	outline:none;
+	background-color:red;
+	text-decoration:none;}
+
+	
+#contentArea{
+
+	width:79%; 
+	margin-left:22.5%;
+	height:100%;
+
+}
+	
+	
+.tile{
+	width:33%; 
+	height:270px;
+	min-height:40%;
+	max-height:40%;
+	border-bottom:1px solid black;
+	margin:-3px;
+	display:none;
+	opacity:1;
+	}	
+
+.tile:hover{
+	opacity:.7}
+
+
+#menu{
+	position:fixed;
+	min-height:2590px;
+	z-index:5;
+	width:22.2%; 
+	float:left;
+	background-color:#000;
+	border:1px solid black;
+	transition:all 500ms;
+	-webkit-transition:all 500ms;
+	}
+	
+#about{
+	background:none;
+	display:none; 
+	font-family:"robotobold";
+	width:80%; 
+	float:left;
+	margin-left:22%;
+	margin-top:-50px; 
+	text-align:left;
+	z-index:5}	
+#about h1{
+	font-size:72px;
+	padding:25px;
+	background-color:rgba(0,0,0,.5);
+	text-shadow:1px 1px 1px black;
+	text-align:center;
+}	
+#social{
+	font-family:"social";
+	float:right;
+	margin-right:100px;
+	margin-top:-70px;
+	color:white;
+	font-size:36px;
+}
+#social a{text-decoration:none; color:white;}
+#social a:hover{
+	color:#FE6500
+}
+#description{
+	background:none;
+	padding:20px;
+	font-size:20px;
+	font-family:"robotoregular";
+	
+/*	text-shadow:1px 1px 1px black;
+*/
+}
+#description h1{
+	
+	background-color:rgba(0,0,0,0.5);
+	font-size:30px; 
+	line-height:35px;
+	font-family:"robotobold";
+	margin-top:21%;
+	margin-left:-20px;
+	text-align:center;	
+}
+.comments{
+	display:inline;
+	float:left; 
+	height:300px;
+	width:95%;
+	margin-top:-3px;
+	margin-left:-5px;
+	background-color:rgba(0,0,0,0.2);	
+	zoom:1;
+	}
+	
+/*---------------Angular transitions-------------------------*/
+.comments.ng-binding {
+  display:inline !important;
+  opacity: 1;
+  transition:opacity 1s;
+  -moz-transition:opacity 1s;
+  padding:2.5%;
+
+}	
+.comments.ng-binding.ng-hide {
+  opacity: 0; 
+  width:0px !important;
+  display: none !important;
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+padding:0px;
+}
+/*---------------------------------------------------------*/
+
+#hide{font-size:14px; 
+	text-align:right; 
+	position:relative; 
+	top:30px;
+	color:gray}
+
+#hide:hover{color:#850000}
+
+#profile{
+		position:fixed; 
+		top:0px; 
+		left:20%; 
+		height:125%; 
+		width:89%;  
+		z-index:-1;}
+		
+		
+@media all and (max-width: 1060px){
+	#background{height:100%;}
+	.tile{height:auto;}
+	.button{font-size:14px; padding:10px;}
+	#about h1{font-size:36px;}
+	#description h1{font-size:22px;}
+	#social{font-size:24px; margin-top:-50px;}
+	#profile{width:150%;}
+	.comments.ng-binding {height:auto;font-size:14px;padding-left:10px; padding-bottom:70px;}
+}		
+
+@media all and (max-width:480px){
+	#description h1{margin-left:0px;}
+	#profile{width:200%; left:-50px;}
+	.tile{width:100%;}
+	
+}
+		
+

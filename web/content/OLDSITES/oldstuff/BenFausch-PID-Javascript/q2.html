@@ -1,0 +1,49 @@
+<html> 
+<head> 
+<style> 
+#birthday { 
+display: none; 
+} 
+.birthday{
+	position:fixed; 
+	left:0px; 
+	top:0px; 
+	z-index:1; 
+	height:100%; 
+	width:100%;}
+</style>
+ 
+<script> 
+var what = prompt("When is yo bday? (mm/dd) (Bonus Points if it's today :)");
+
+function getRelativeDate( date, changeDays ) { 
+	var d = new Date( date ); 
+	return d.setDate( d.getDate() + changeDays ); 
+}; 
+
+function chkDate() { 
+	var today = new Date(); 
+	var thisYear = today.getFullYear(); 
+	var mDate = thisYear + '/' + what; 
+	var theDayBefore = getRelativeDate( mDate, -1 );	
+	var theDayAfter = getRelativeDate( mDate, 1 );	
+
+			if ( theDayBefore < today && today < theDayAfter) { 
+		document.getElementById( 'regular' ).style.display = 'none'; 
+		document.getElementById( 'birthday' ).style.display = 'block';
+		} 
+}; 
+window.onload = chkDate; 
+</script> 
+</head> 
+<body> 
+	<div id="birthday"> 
+		<img src="img/confetti.gif" class="birthday" style="z-index:2"> 
+		<img src="img/ole.gif" class="birthday">
+	</div> 
+
+	<div id="regular" align="center"> 
+			<img src="img/home.PNG" style="margin-top:10%;">
+	</div> 
+</body> 
+</html>

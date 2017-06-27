@@ -1,0 +1,49 @@
+<html>
+	<head>
+
+<script>
+
+function checkItYo(){
+		var number = prompt("Pick a number between 1 and 12.");
+		
+		if (isNaN(number)){
+			alert("guise seriously, 1 and 12");
+			return checkItYo();
+		}
+		else if (number > 12 || number < 1){
+			alert("seriously guise, 1 and 12");
+			return checkItYo();
+		}
+
+
+		for (var i = 1; i <= 12; i++){
+			document.write(number + "x" + [i] + "=" + number * [i] + "<br>")
+		}
+		
+		
+		if (number < 6){
+		document.body.style.backgroundColor="red";			
+		}
+		else if (number > 6){
+		document.body.style.backgroundColor="blue";	
+		}
+		else if (number == 6){
+		document.body.style.backgroundColor="white";	
+			
+		}
+}
+checkItYo();
+</script>
+	<style>
+		 body{font-size:64px; 
+		 text-align:center;
+		 line-height:50px;}
+	</style>
+	
+	</head>
+		<body>
+			<br>yay.
+	
+		</body>
+
+</html>

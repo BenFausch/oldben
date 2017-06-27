@@ -1,0 +1,325 @@
+@import url("webfonts/levenim/stylesheet.css");
+
+
+body{
+	background-color: #0A2E4D;
+	margin: 0px;
+	font-style: normal;
+	font-weight: 300;
+	font-family: levenim;
+	overflow-x:hidden;
+}
+h1,h2{
+	color:white;  
+	font-weight:bold;
+	  text-shadow:
+       3px 3px 3px #000;
+	   -webkit-text-stroke: 1px}
+	   
+h1{font-size:60pt; line-height:65px; text-align:center;}
+h2{font-size:30pt;}	
+
+a, a:visited, a:active{text-decoration:none; color:yellow;}
+#scrims{
+	position: absolute;
+	top: 0px;
+	z-index: 3;
+	width: 100%;
+	
+}
+	
+#floats{position:absolute; top:0px; z-index:2; width:100%;}
+#otherFloats{position:absolute; top:700px; z-index:3; width:100%;}
+#bgimg {
+	position:absolute; 
+	left:0px;  
+	top:0px;
+	z-index:-1;
+	width:100%;
+	opacity:.3;	}
+	
+#hello{
+	position:absolute; 
+	left:15%; 
+	top:40px; 
+	z-index:5;}	
+	
+#name{
+	position:absolute;
+	left:10%; top:140px;
+	z-index:5}
+
+
+#nav{position:fixed;
+	left:0px;
+	top:0px;
+	height:35px;
+	width:100%;
+	z-index:9;
+	background-color:black;
+	padding:0px;
+	overflow:hidden}
+	
+#nav a{color:yellow;
+	font-size:26px;
+	z-index:9;
+	padding-right:17px;
+	padding-left:15px;
+	font-weight:bold;
+	text-shadow: 
+	1px 1px 0px #F90;
+	border-right:thin solid #333;
+	}
+#nav a:hover{color:white;}	
+	  	  	
+#social{
+	position:fixed;
+	right:0px;
+	top:0px;
+	height:35px;
+	width:150px;
+	background-image:url(images/social.gif);
+	background-repeat:no-repeat;
+	background-size:contain; 
+	z-index:9;}
+
+.socialLinks{
+	display:block; 
+	height:35px; 
+	width:36px; 
+	float:left; 
+	background-color:black;
+	opacity:.15}
+
+.socialLinks:hover{opacity:0;}	
+
+
+	
+#profile{
+	position:absolute;
+	left:50%;
+	top:0px;
+	z-index:3;}	
+
+#scrim{position:absolute;
+	left:0px;
+	top:1025px;
+	z-index:3;
+	min-width:100%;}
+
+
+#about{
+	position:absolute;
+	left:10%;
+	top:700px;
+	margin-right:10%;
+	z-index:5}	
+
+#aboutbg{
+	position:absolute;
+	left:10%;
+	top:750px;
+	margin-right:5%;
+	z-index:2;
+	opacity:.2;}
+
+
+
+
+
+.linkImg{
+	height:250px; 
+	width:100%; }
+
+.linkImg2{
+	height:325px;
+	width:100%;}
+.linkImg3{
+	position:absolute;
+	height:1200px;
+	width:100%;}		
+
+
+
+.links, .links2, .links3{
+	display:block; 
+	height:100%; 
+	width:25%; 
+	float:left; 
+	background-color:black; 
+	opacity:.2;}
+
+.links2{width:33.3%;}
+.links3{height:25%;width:33.3%;}
+.links:hover, .links2:hover, .links3:hover{opacity:0;}
+
+
+
+
+#websitesLinks{
+background-image:url(images/websites.jpg);
+background-repeat:no-repeat; background-size:100% 100%;}
+#musicLinks{background-image:url(images/music.jpg); 
+background-repeat:no-repeat;background-size:100% 100%;}
+#funnyLinks{background-image:url(images/funny.jpg);
+ background-repeat:no-repeat;background-size:100% 100%;}
+#bandLinks{background-image:url(images/bands.jpg);
+ background-repeat:no-repeat;background-size:100% 105%;}
+#otherLinks{background-image:url(images/other.jpg);
+ background-repeat:no-repeat;background-size:100% 100%;}
+
+
+
+#scrim1{
+	position:absolute;
+	left:0px;
+	top:1800px;
+	z-index:3;
+	min-width:100%;}
+#websites{width:100%;
+	position:absolute; 
+	top:1200px; 
+	z-index:5;
+	}	
+#float{position:absolute;
+	left:0px;
+	top:1450px;
+	z-index:2;
+	opacity:.2;}	
+
+
+#scrim2{
+	position:absolute;
+	left:0px;
+	top:2820px;
+	z-index:3;
+	min-width:100%;}
+	
+#music{width:100%;
+	position:absolute;
+	top:1900px;
+	z-index:5;	}
+	
+		
+
+#scrim3{
+	position:absolute;
+	left:0px;
+	top:4020px;
+	z-index:3;
+	min-width:100%;}	
+#comedy{
+	width:100%;
+	position:absolute;
+	top:2700px;
+	z-index:5;
+	}
+
+
+
+#scrim4{
+	position:absolute;
+	left:0px;
+	top:5100px;
+	z-index:3;
+	min-width:100%;}		
+#bands{	
+	width:100%;
+	position:absolute;
+	top:3400px;
+	z-index:5;
+	}
+
+
+#scrim5{
+	position:absolute;
+	left:0px;
+	top:6200px;
+	z-index:3;
+	min-width:100%;}				
+#other{	
+	width:100%;
+	position:absolute;
+	top:4150px;
+	z-index:5;
+	}
+	
+	
+
+
+
+@media (max-width:480px){
+body{overflow-x:hidden;}
+#nav a{
+	font-size:8pt;
+	padding-right:2px;
+	padding-left:2px}
+#social{width:100px; height:25px;}
+.socialLinks{height:25px; width:25px}
+
+h1{font-size:30pt; line-height:43px; text-align:center;}
+h2{font-size:16pt;margin-bottom:35px;}	
+
+#scrims{display:none;}
+
+#profile{
+	position:absolute;
+	left:0%;
+	top:0px;
+	width:100px;}	
+#about{top:400px;}	
+#aboutbg{top:400px;}
+.linkImg{height:100px; width:440px;}
+.linkImg2{height:100px;width:330px; margin-left:15%;}
+.linkImg3{height:400px;width:330px; margin-left:15%;}		
+.links{
+	display:block; 
+	height:100px; 
+	width:110px;}
+
+
+
+
+
+#websites{
+	top:700px;}	
+#float1{
+	top:700px;}	
+
+
+
+#scrim2{
+	top:1540px;}
+	
+#music{
+	top:1100px;
+	}	
+
+
+
+
+#scrim3{
+	top:2320px;}	
+#comedy{
+	top:1550px;
+	}
+#float2{top:2800px;}	
+
+#scrim4{
+	top:2630px;}
+			
+#bands{
+	top:2000px;
+	}
+#float3{
+	top:2680px;
+}
+
+				
+#other{
+	top:2350px;}
+
+
+}
+
+

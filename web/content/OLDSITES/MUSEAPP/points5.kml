@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Folder>
+<name>points.kml</name>
+	 <Placemark>
+   			 <description><![CDATA[<h1>Our Loving Creator</h1><h1><a href="http://www.benfausch.com">ALL HAIL THE HYPNOGINGER</a></h1>]]></description>
+			 <Point><coordinates>-73.965735,40.707282</coordinates></Point>		
+	 </Placemark>
+
+
+	
+	 <Placemark>
+<name><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Max's_Kansas_City">Max's Kansas City</a></h2>]]></name>
+<description><![CDATA[<img src="http://www.benfausch.com/MUSEAPP/img/maxs.jpg" width="200">]]></description>
+<Point><coordinates>-73.988921,40.737340</coordinates></Point>		
+	 </Placemark>
+
+
+
+	 <Placemark>
+<name><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Cbgb">CBGB's</a></h2>]]></name>
+<description><![CDATA[<img src="http://www.benfausch.com/MUSEAPP/img/CBGB.jpg" width="200">]]></description> 
+<Point><coordinates>-73.99218,40.725968</coordinates></Point></Placemark>
+
+
+	 <Placemark>
+<name><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Fillmore_East">Fillmore East</a></h2>]]></name>
+<description><![CDATA[<img src="http://www.benfausch.com/MUSEAPP/img/fillmoreeast.jpg" width="200">]]></description>
+<Point><coordinates>-73.988629,40.727908</coordinates></Point>		
+	 </Placemark>
+
+
+	 <Placemark>
+<name><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Electric_Circus_(nightclub)">Electric Circus</a></h2>]]></name>
+<description><![CDATA[<img src="http://www.benfausch.com/MUSEAPP/img/electriccircus.jpg" width="200">]]></description>
+<Point><coordinates>-73.988491,40.729359</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<name><![CDATA[<h2><a href="http://pigbag.tripod.com/coney/">Coney Island High</a></h2>]]></name>
+<description><![CDATA[<img src="http://www.benfausch.com/MUSEAPP/img/coneyislandhigh.jpg" width="200">]]></description>
+<Point><coordinates>-73.989100,40.729676</coordinates></Point>		
+	 </Placemark>
+
+	 <Placemark>
+<name><![CDATA[<h2><a href="http://en.wikipedia.org/wiki/Danceteria">Danceteria</a></h2>]]></name>
+<description><![CDATA[<img src="http://www.benfausch.com/MUSEAPP/img/danceteria.jpg" width="200">]]></description>
+<Point><coordinates>-73.991662,40.740949</coordinates></Point>		
+	 </Placemark>
+	
+</Folder>
+</Document>			  
+</kml>

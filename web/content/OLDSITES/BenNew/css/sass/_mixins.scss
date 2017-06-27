@@ -1,0 +1,230 @@
+
+//=======================================
+// Breakpoints.
+//=======================================
+// Define breakpoints:
+// $breakpoints: (
+//     'small':     'min-width: 599px', // small-tablet
+//     'medium':    'min-width: 767px', // tablet
+//     'large':     'min-width: 1023px', // small screen
+//     'larger':    'min-width: 1280px', // widescreen
+//     'largest':   'min-width: 1920px', // HDTV
+// );
+// Use: @include breakpoint( small ){ ... }
+// http://www.sitepoint.com/managing-responsive-breakpoints-sass/
+@mixin breakpoint( $name )
+{
+    
+    // If the key exists in the map
+    @if map-has-key( $breakpoints, $name )
+    {
+        // Prints a media query based on the value
+        @media
+        #{
+            inspect( map-get( $breakpoints, $name ) )
+        }
+        {
+            @content;
+        }
+    }
+ 
+ 
+    // If the key doesn't exist in the map, throw an error.
+    @else
+    {
+        @warn "No value found from '#{$breakpoint}'. Please make sure it is defined in the '$breakpoints' map.";
+    }
+}
+
+//=======================================
+// Clear fix.
+//=======================================
+// Use: @extend %clearfix;
+// Clearfix http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+%clearfix
+{
+    *zoom: 1; // For IE 6/7 only, trigger hasLayout and contain floats.
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+// =======================================
+// REM Font-sizer.
+// =======================================
+// Use: @include font-size(1); or @include font-size(1, 2.1);
+// http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
+@mixin font-size( $size: 1, $line: $size * 1.5, $important: '')
+{
+    $imp: '';
+    @if $important == 'true'
+    {
+        $imp: ' !important';
+    }
+	font-size     : ($size * 16) + px + $imp;
+	line-height   : ($line * 16) + px + $imp;
+	font-size     : $size + rem + $imp;
+	line-height   : $line + rem + $imp;
+}
+
+// =======================================
+// Hide off-screen.
+// =======================================
+@mixin hide-off-screen {
+    position: absolute;
+    left: -20000px;
+}
+
+// =======================================
+// Fill with background image.
+// =======================================
+@mixin bg-cover($imagePath, $attachment: fixed) {
+    background-image: url($imagePath);
+    background-repeat: no-repeat;
+    background-position: center center;        
+    background-attachment: $attachment;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.$imagePath', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$imagePath', sizingMethod='scale')";
+    width:100%;
+}
+
+// =======================================
+// Fill with background image.
+// =======================================
+@mixin scaled-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+// =======================================
+// Box sizing and overflow.
+// =======================================
+@mixin box-sizing
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    &:before {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    &:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+
+// =======================================
+// Box Shadow.
+// =======================================
+@mixin box-shadow($values)
+{
+    -webkit-box-shadow: $values;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    $values;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         $values;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+// =======================================
+// Word Breaks.
+// =======================================
+@mixin word-break-at-character
+{
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+// =======================================
+// Border Radius.
+// =======================================
+@mixin border-radius ( $tl, $tr, $br, $bl )
+{
+    -webkit-border-top-left-radius: $tl;
+    -moz-border-radius-topleft: $tl;
+    border-top-left-radius: $tl;
+    
+    -webkit-border-top-right-radius: $tr;
+    -moz-border-radius-topright: $tr;
+    border-top-right-radius: $tr;
+    
+    -webkit-border-bottom-right-radius: $br;
+    -moz-border-radius-bottomright: $br;
+    border-bottom-right-radius: $br;
+    
+    -webkit-border-bottom-left-radius: $bl;
+    -moz-border-radius-bottomleft: $bl;
+    border-bottom-left-radius: $bl;
+}
+
+// =======================================
+// Gradients.
+// =======================================
+
+// Top-to-bottom background gradient helper.
+@mixin gradient-top-to-bottom ($color-start, $color-stop, $position: top)
+{
+    background: $color-start;
+    background-image: -ms-linear-gradient(top, $color-start 0%, $color-stop 100%); /* IE10 Consumer Preview */
+    background-image: -moz-linear-gradient(top, $color-start 0%, $color-stop 100%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(top, $color-start 0%, $color-stop 100%); /* Opera */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color-start), color-stop(1, $color-stop)); /* Webkit (Safari/Chrome 10) */  
+    background-image: -webkit-linear-gradient(top, $color-start 0%, $color-stop 100%); /* Webkit (Chrome 11+) */
+    background-image: linear-gradient(to bottom, $color-start 0%, $color-stop 100%); /* W3C Markup, IE10 Release Preview */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-start', endColorstr='$color-stop',GradientType=0 ); 
+}
+
+// Top-to-bottom background gradient with image.
+@mixin gradient-top-to-bottom-image ($color-start, $color-stop, $url, $left, $top)
+{
+    background: $color-start; /* Old browsers */
+    background: url($url) no-repeat $left $top, -ms-linear-gradient(top, $color-start 0%,$color-stop 100%); /* IE10+ */
+    background: url($url) no-repeat $left $top, -moz-linear-gradient(top, $color-start 0%, $color-stop 100%); /* FF3.6+ */
+    background: url($url) no-repeat $left $top, -o-linear-gradient(top, $color-start 0%,$color-stop 100%); /* Opera 11.10+ */
+    background: url($url) no-repeat $left $top, -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color-start), color-stop(100%, $color-stop)); /* Chrome,Safari4+ */
+    background: url($url) no-repeat $left $top, -webkit-linear-gradient(top, $color-start 0%, $color-stop 100%); /* Chrome10+,Safari5.1+ */
+    background: url($url) no-repeat $left $top, linear-gradient(to bottom, $color-start 0%, $color-stop 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-start', endColorstr='$color-stop', GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradient-diaginal-two-color ($color-start, $color-stop)
+{
+    background: $color-start; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  $color-start 0%, $color-stop 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$color-start), color-stop(100%,$color-stop)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  $color-start 0%,$color-stop 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  $color-start 0%,$color-stop 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  $color-start 0%,$color-stop 100%); /* IE10+ */
+    background: linear-gradient(135deg,  $color-start 0%,$color-stop 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-start', endColorstr='$color-stop',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+@mixin gradient-diaginal-three-color ($color-start, $color-mid, $color-stop)
+{
+    background: $color-start; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  $color-start 0%, $color-mid 50%, $color-stop 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$color-start), color-stop(50%,$color-mid), color-stop(100%,$color-stop)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  $color-start 0%,$color-mid 50%,$color-stop 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  $color-start 0%,$color-mid 50%,$color-stop 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  $color-start 0%,$color-mid 50%,$color-stop 100%); /* IE10+ */
+    background: linear-gradient(135deg,  $color-start 0%,$color-mid 50%,$color-stop 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-start', endColorstr='$color-stop',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

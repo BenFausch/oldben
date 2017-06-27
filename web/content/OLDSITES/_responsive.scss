@@ -1,0 +1,314 @@
+/*===========================================*/
+/* 1800px */
+/*===========================================*/
+@media screen and (max-width:1800px){
+     
+    
+    nav {
+        
+        #navTitle {
+            
+            h2{
+                font-size:2.3rem;
+            }
+        }
+    
+        #navLink, #social{
+            
+                padding-bottom:3%;
+            
+             li a{
+                font-size:1.7rem;
+                line-height:2rem;
+             }
+        }
+    
+    
+    
+    }
+    
+    #about, #projects{
+        
+        padding:5%;
+    
+            h1,h2{
+                    font-size:$page_header;
+                    line-height:2em;
+                    }
+            
+            p,li{
+                font-size: $page_text;
+                line-height:1em;
+            }
+    
+    
+    }
+    
+    #projects{
+      #tiles{
+            width:100%;
+
+            li{
+                #hidden{
+                    h1{
+                    font-size:$page_header;
+                    line-height:$page_header;
+                    }
+                    p{
+                    
+                    font-size:$page_text;                
+                    /*leave at em so it's in relation to the font var*/
+                    line-height:1.4em;
+                    }
+                }
+            }
+      }
+    }   
+    
+    
+    
+    
+    
+    
+    
+    
+}
+/*===========================================*/
+/* smaller screens */
+/*===========================================*/
+@media screen and (max-width:1200px){
+   
+   #navTitle{
+        img{
+            padding-bottom: 1%!important;
+        }
+    }   
+    
+    #projects{
+      #tiles{
+            width:100%;
+
+            li{
+                //min-height:450px!important;
+                img{
+//                    margin:75px 0 -75px 0;
+                }
+                #hidden{
+                    h1{
+                    font-size:$page_header_smaller;
+                    line-height:1em;
+                    }
+                    p{
+                    font-size:$page_text_smaller;                
+                    /*leave at em so it's in relation to the font var*/
+                    line-height:1.3em;
+
+                    }
+                }
+            }
+      }
+    }
+}
+
+
+
+
+
+
+/*===========================================*/
+/* mobile */
+/*===========================================*/
+@media screen and (min-resolution:1.1dppx), screen and (max-width:1024px){
+ /*=====globals=======*/
+ 
+ #about,#projects{
+    
+    h1,h2{
+        font-size:$page_header_1024;
+    }
+    p{
+        font-size:$page_text_1024;
+        line-height:$page_text_1024;
+    }
+    
+    
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ /*==========nav stuff=========*/
+ 
+ 
+                        
+ 
+ 
+ 
+ nav {
+        
+        #navTitle {
+            
+            h2{
+                font-size:2rem;
+            }
+        }
+    
+        #navLink, #social{
+            
+                padding-bottom:3%;
+            
+             li a{
+                font-size:2.9rem;
+                line-height:1.5em;
+             }
+        }
+    
+    
+    
+    }
+ 
+ 
+ 
+ 
+  #navClick, #navClick2{
+    height:150px;
+    width:300px;
+        p{
+           font-size:1.7rem;
+            margin-right:20%;
+            margin-top: 19%;
+        }
+    
+    }  
+    
+    
+/*==========end nav==============*/    
+    
+  #projects{
+
+   #tiles{
+            width:100%;
+            padding-bottom:100%;
+
+            li{
+                width:50%;
+                min-height:250px!important;
+                border:none!important;
+                float:left;
+                
+                img{
+                    width:100%;
+                    height:100%;
+                    position:relative;
+                    margin:0px;
+                    z-index:4;
+                    padding:1%;
+                    box-sizing: border-box;
+                
+                    &:hover{
+                        opacity:.55;
+                    }
+                }
+                img, #hidden{
+                     transition: all 0ms;
+                -webkit-transition: all 0ms;
+                
+                h1{
+                font-size:$page_header_1024;
+                line-height:$page_header_1024;
+                    
+                }
+                p{
+                font-size:$page_text_1024;
+                line-height:$page_text_1024;
+                }
+               
+               
+                }
+                
+            #hidden{display:none}
+            
+            &:hover{
+                #hidden{
+                    border:2px solid white;
+                   //display:block;                    
+                   width:100%;
+                   position:absolute;
+                     z-index:15;
+                    left:0px;
+                    padding:10%;
+                    background-color:black;
+                }
+             }
+            
+            
+            
+            }
+        }
+    
+  } 
+/*==end #projects==*/    
+    
+    
+    
+    
+    
+    
+/*==end media==*/    
+}
+/*==end media==*/    
+
+
+
+
+
+/*===========================================*/
+/* #hidden text Queries*/
+/*===========================================*/
+@media screen and (max-width:3800px){
+    #hidden{
+        float:left;                    
+        opacity:0;
+        width:60%;            
+        margin-left:-500px;
+        z-index:-2;
+        padding:5%;
+        box-sizing: border-box;
+        @include Transition;
+    }
+    
+    
+}
+@media screen and (min-resolution:1.1dppx), screen and (max-width:1024px){
+
+/*@media screen and (max-width:1024px){*/
+
+    #hidden{display:none;
+     border:2px solid white;
+                  display:none;                    
+                   width:100%;
+                   position:absolute;
+                     z-index:5;
+                    left:0px;
+                    padding:10%;
+                    margin-top:400px;
+                    background-color:black;}
+    
+    #projects #tiles li{
+        &:hover{
+                #hidden{
+                   
+                }
+             }
+        
+    }
+    
+}   
+    
+    
+    
+    
+    
+    

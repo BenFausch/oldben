@@ -1,0 +1,90 @@
+
+// ===============================
+// Breakpoint definitions.
+// ===============================
+/*$breakpoints: (
+    'smaller':   ( min-width: 475px ),  // large-phone
+    'small':     ( min-width: 590px ),  // small-tablet
+    'medium':    ( min-width: 766px ),  // tablet
+    'large':     ( min-width: 1023px ), // small screen
+    'larger':    ( min-width: 1280px ), // widescreen
+    'largest':   ( min-width: 1920px )  // HDTV
+);
+*/
+// ================================
+// Page Layout Settings
+// ================================
+
+// Global maximum page width.
+$max-content-width: 100%;
+@mixin max_width {
+    margin: 0 auto;
+    max-width: $max-content-width;
+}
+
+
+// ================================
+// Transitions
+// ================================
+
+$navTr: 600ms;
+@mixin Transition{
+    transition:all 650ms;
+               -webkit-transition:all 650ms;
+               
+    
+}
+
+// ================================
+// Font Sizes
+// ================================
+
+// Section titles.
+$landing_page_header: 2.4rem;
+$page_header: 2rem;
+$page_header_smaller: 2rem;
+$page_header_1024:3rem;
+$page_text: 1rem;
+$page_text_smaller: 1rem;
+$page_text_1024:2.5rem;
+$huge: 6rem;
+$less_huge:4.5rem;
+
+// ================================
+// Colors
+// ================================
+
+$color_text: #000000;
+$color_text_links: #fff;
+$color_text_links_hover:#dd3d30;
+$color_text_reverse:#FFFFFF;
+
+//background colors
+$about_bg: rgba(26, 0, 63, 0.9);
+$projects_bg: rgba(19, 17, 28, 0.93);
+$contact_bg:rgba(0,0,0,0.7);
+
+// ================================
+// Image Variables
+// ================================
+$image_sprites: "img/sprites.png";
+
+
+// ================================
+// Fonts
+// ================================
+
+@mixin font_raleway {
+   font-family: 'Raleway', sans-serif;
+}
+
+
+// ========================================
+// Build the Styles.
+// ========================================
+@import "reset";                // CSS reset by Eric Meyer.
+@import "mixins";               // General SASS mixin functions.
+
+@import "pages";                // Pages and sections styles.
+@import "button";
+@import "responsive";              // Responsive Design

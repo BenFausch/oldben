@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Benjax</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-route.js"></script>
+ 	<script type="text/javascript" src="js/app.js"></script>
+ 	<script type="text/javascript" src="js/controllers.js"></script>
+ 	<script type="text/javascript" src="js/services.js"></script>
+	<script src="js/jquery.js"></script>
+<link rel="stylesheet" href="font/font.css" type="text/css" charset="utf-8"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>		
+
+
+</head>
+
+<body ng-app="contentApp" ng-controller="contentController">
+ 
+<img src="img/pixelbg.gif" id="background">
+ 
+  	<div id="menu">
+ <img src="img/profile.gif" style="width:100%; margin-bottom:-5px;"> 	
+ <button id="homeFilter" class="button" >HOME</button>  
+ <button id="webFilter" class="button">WEB</button>  	
+ <button id="musicFilter" class="button" >MUSIC</button>  	
+ <button id="videoFilter" class="button" >VIDEO</button>  	
+ <button class="button" >
+	 	<a href="http://btfportfolio.tumblr.com" style="text-decoration:none; color:white" target="_blank">
+	 	PORTFOLIO
+	 	</a>
+	 </button>
+ <button class="button" >
+	 	<a href="http://www.benfausch.com/resume.html" style="text-decoration:none; color:white" target="_blank">
+	 	RESUME
+	 	</a>
+	 </button>  	
+
+  </div>
+  
+ <div id="about">
+ 		
+ 	<h1>My name is Ben Fausch.</h1>	
+		<p id="social">
+		<a href="http://www.facebook.com/benfausch" target="_blank">d</a> 
+		<a href="https://www.linkedin.com/in/benfausch" target="_blank">1</a> 
+        <a href="http://www.twitter.com/theSousaB" target="_blank">e</a>
+		<a href="http://btfportfolio.tumblr.com" target="_blank">f</a> 
+		</p>
+	<img src="img/ben.jpg" id="profile">
+
+
+	<div id="description">
+		
+		
+				<h1>
+			I am a multimedia creator and web designer with 10 years of experience. <br>
+				<br>
+
+My main goal is to aid clients and companies with creating a professional, clean, multifaceted persona 
+that is accessible across a variety of platforms.
+</h1>	
+ 	
+ 	</div> 
+ </div> 
+  
+ 
+  
+  
+  <div id="contentArea">
+      <span ng-repeat="content in contentList">        
+    
+	        <!--Image associated with item-->
+	       	<img src="img/{{content.nationality}}.jpg" class="tile" id="{{content.type}}" />		      
+	
+	
+		
+		
+	 <span ng-show="display" class="comments" id="{{content.type}}">		
+		
+			<h2><a href="{{content.link}}" target="_blank">
+				{{content.Label.title}}</a></h2>
+				
+			<h3><a href="" style="text-decoration:none">I was the:</a> {{content.Label.job}}</h3>
+			{{content.Label.description}}
+			<p id="hide">click anywhere on box to hide</p>
+		</span>
+    
+      </span><!--angular repeat-->
+   
+   
+   
+   </div> <!--contentArea-->
+  
+  	<script src="js/logic2.js"></script>
+
+
+</body>
+</html>

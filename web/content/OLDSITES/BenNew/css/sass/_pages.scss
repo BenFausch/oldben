@@ -1,0 +1,407 @@
+/*
+====================================
+Ben Theme
+====================================
+*/
+    
+// ===============================
+// Global Page Styles
+// ===============================
+body
+{overflow-x:hidden;
+margin:0px;
+}
+
+
+
+// Apply Global Font.
+html, body, div, span, applet, object, iframe, input, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+    @include font_raleway;
+    color: inherit;
+    color: $color_text;
+    p
+    {
+        margin-bottom: 1rem;
+    }
+    
+    b,strong
+    {
+        font-weight: bold;
+    }
+    i,em
+    {
+        font-style: italic;
+    }
+    a
+    {
+        color: $color_text_links;
+        text-decoration: none;
+        cursor: pointer;
+        
+            
+    }
+    
+}
+
+html, body
+{
+    width: 100%;
+}
+
+body
+{
+    background-color:white;
+}
+//=================================================
+// Nav Bar.
+//=================================================
+#navClick, #navClick2{
+
+    position:fixed;
+    z-index:99999;
+    left:1%;
+    bottom:10px;
+    width:100px;
+    height:50px;
+    width:7%;
+    height:7%;
+        
+        img{
+            width:50px;
+            height:50px;}
+
+        p{    font-size:1rem;
+                float:right;
+                margin-top:20px;
+            &:hover{
+                color:$color_text_links_hover;
+            }
+            
+        }
+
+}
+
+
+
+#navClick2{
+    display:none;
+   opacity:0.96;
+   p{
+    color:$color_text_reverse;
+        &:hover{
+            color:$color_text_links_hover;
+        }
+   }
+}
+
+
+nav{
+    position:fixed;
+    left:-700px;
+    background-color:rgba(0,0,0,0);
+    transition: all $navTr;
+    -webkit-transition: all $navTr;
+    -moz-transition: all $navTr;
+    width:35%;
+    z-index:99999;
+    /*padding:2% 0;*/
+    
+
+    #navTitle{
+       // img, h2, h3{float:left;}
+        
+        img{
+            width:220px;
+            padding-bottom:15%;
+            }
+        
+        h2{
+            color:$color_text_reverse;
+            font-weight:bolder;
+            //font-size:200%;
+            padding: 10% 2% 1% 2%;
+            }
+        
+        h3{
+            color:$color_text_reverse;
+            font-weight:bolder;
+           // font-size:2rem;
+            padding: 2%;
+            }    
+    }    
+            
+            
+            
+            #navLink, #social{
+                width:100%;
+                margin-left:0%;
+                list-style: none;
+                //text-align:center;
+                /*padding:0% 10%;*/
+                box-sizing: border-box;
+           
+                li{
+                   
+                    //border-bottom: 2px solid rgba(0,0,0,0);
+                    transition: all $navTr;
+                    -webkit-transition: all $navTr;
+                    -moz-transition:all $navTr; 
+                }
+                li:hover{
+                    //border-bottom: 2px solid white;
+                }
+                
+                
+                    li a{
+                        padding: 0% 15% 0% 5%;
+                        color:$color_text_reverse;
+                        font-weight:bolder;
+                       // font-size:2.5rem;
+                        //line-height:2.5rem;
+                    transition: all $navTr;
+                    -webkit-transition: all $navTr;
+                    -moz-transition:all $navTr;     
+                    }
+                li:hover a{
+                            color:$color_text_links_hover!important;
+                            border-bottom: 2px solid white;
+                        }
+                
+            }
+            
+            
+}
+//=================================================
+// Landing Page.
+//=================================================
+#profile, #title{
+    float:left;
+    box-sizing:border-box;
+
+}
+
+#profile{
+    background-image:url('../../img/profile.jpg');
+    background-size:cover;
+    position:fixed;
+    top:0px;
+    
+}
+#title{
+    font-size:$landing_page_header;
+    padding:30% 10% 10% 10%;
+    font-weight:bold;
+}
+
+
+//=================================================
+// Defaults/About.
+//=================================================
+#about, #projects, #contact{
+        background-color: $about_bg;
+        width:100%;
+        height:100%;
+        padding: 15%;
+        box-sizing: border-box;
+        
+        #aboutText, #contactText{
+            padding:5%;
+            border: 2px solid rgba(0,0,0,0);
+            transition: all $navTr;
+            -webkit-transition: all $navTr;
+            -moz-transition:all $navTr; 
+                &:hover{
+                    border: 2px solid white;
+                }
+        }
+        
+        
+        
+        h1, h2, p, li{
+            color:$color_text_reverse;
+        }
+        
+        h1,h2{
+            font-size:$page_header;
+            font-weight:900;
+            line-height:2em;
+        
+            a{
+                   transition: all $navTr;
+            -webkit-transition: all $navTr;
+            -moz-transition:all $navTr;
+                &:hover{
+                    color:$color_text_links_hover;
+                }
+            }
+        }
+        p,li{
+            font-size:$page_text;
+            line-height:1.2em;
+        }
+        li{
+            line-height:1.5em;
+        }
+ 
+    
+/*end about*/    
+}
+
+//=================================================
+// Projects- modifications
+//=================================================
+#projects{
+    background-color:$projects_bg;
+    
+    
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+    
+    
+        h2{
+            font-size: $huge!important;
+            text-align:center;
+            background-color:rgba(0,0,0,0.2);
+            //color:black;
+            padding: 10% 0;
+            border:2px solid white;
+            width:100%;
+            margin-bottom:5%;;
+            
+            }    
+        
+        
+        #tiles{
+            width:100%;
+
+            li{
+                border: 2px solid rgba(0,0,0,0);
+                width:100%;
+                
+                
+                img{
+                    float:left;
+                    width:40%;
+                    margin-left:30%;
+                    position:relative;
+                    z-index:4;
+                    padding:1%;
+                    box-sizing: border-box;
+                @include Transition; 
+                }
+                
+                #hidden{
+                    float:left;
+                    
+                    opacity:0;
+                    width:60%;
+                    
+                    margin-left:-500px;
+                    z-index:-2;
+                    padding:5%;
+                    box-sizing: border-box;
+                    @include Transition;
+                        
+                        h1{
+                            line-height:2rem;
+                            margin-bottom:3%;
+                        }
+                        p{
+                           line-height:1.5rem;
+                            text-align:justify;
+                        }
+                        
+                        a{
+                            text-decoration:underline;
+                        }
+                        
+                        
+                        
+                        a:hover{
+            @include Transition;
+            color:$color_text_links_hover;
+            text-decoration:none;
+        }
+                    
+                    
+                    
+                    
+                    }
+            }
+            li:hover{
+                border: 2px solid white;
+                
+                img{
+                    margin-left:0;
+                }
+                #hidden{                    
+                    //display:block;
+                    margin-left:0px;
+                    opacity:1;
+                    
+                    z-index:4;
+
+                }
+                
+                
+                
+                
+                
+            }
+            
+         
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+//=================================================
+// Contact- modifications
+//=================================================
+
+#contact{
+    background-color:$contact_bg;
+}
+
+
+
+
+
+//=================================================
+// content.
+//=================================================
+#content{
+   /* transition: all $navTr;
+            -webkit-transition: all $navTr;
+            -moz-transition:all $navTr; */
+ 
+}
+
+
+
+//=================================================
+// Footer.
+//=================================================
+footer
+{
+  
+}
+.visible{display:block!important; opacity:1!important; transition: all 500ms; -webkit-transition: all 500ms;}

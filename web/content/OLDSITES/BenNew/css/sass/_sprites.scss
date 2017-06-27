@@ -1,0 +1,40 @@
+//----------------------------------
+// 'sprites.png' element alignments.
+//----------------------------------
+@mixin sprite-source
+{
+    background-image: url( $image_sprites );
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+@mixin sprite-logo {
+    @include sprite-source;
+    width: 230px;
+    height: 70px;
+    background-position: 0 -2px;
+}
+
+@mixin facebook-icon {
+    @include sprite-source;
+    width: 70px;
+    height: 63px;
+    background-position: -5px -268px;
+}
+@mixin twitter-icon {
+    @include sprite-source;
+    width: 70px;
+    height: 63px;
+    background-position: -76px -268px;
+}
+@mixin pinterest-icon {
+    @include sprite-source;
+    width: 70px;
+    height: 63px;
+    background-position: -156px -268px;
+}
+@mixin email-icon {
+    @include sprite-source;
+    width: 70px;
+    height: 64px;
+    background-position: -237px -268px;
+}

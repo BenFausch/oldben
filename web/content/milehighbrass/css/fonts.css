@@ -1,0 +1,11 @@
+@font-face {
+    font-family: melma;
+    src: url('melmacracked-webfont.eot');
+    src: url('melmacracked-webfont.eot?#iefix') format('embedded-opentype'),
+         url('melmacracked-webfont.woff2') format('woff2'),
+         url('melmacracked-webfont.woff') format('woff'),
+         url('melmacracked-webfont.ttf') format('truetype'),
+         url('melmacracked-webfont.svg#melma_crackedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
